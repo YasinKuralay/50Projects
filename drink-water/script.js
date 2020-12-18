@@ -23,7 +23,6 @@ function highLightCups(idx) {
                 idx2 === idx &&
                 !smallCups[idx].nextElementSibling.classList.contains('full')
             ) {
-                console.log('next element not full');
                 cup.classList.toggle('full');
             }
         } else {
