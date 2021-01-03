@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #eafbff;
+    /* background-color: #eafbff; */
     background-image: linear-gradient(
         to bottom,
         #eafbff 0%,
@@ -58,6 +58,7 @@ nav ul li {
 
 nav.active ul li {
     opacity: 1;
+    transition: transform 0.6s linear, opacity 1.2s linear;
     transform: rotateY(360deg);
 }
 
