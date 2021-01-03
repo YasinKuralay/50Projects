@@ -59,6 +59,8 @@ nav ul li {
 nav.active ul li {
     opacity: 1;
     transition: transform 0.6s linear, opacity 1.2s linear;
+    transition-delay: 0.42s;
+    transition-delay: opacity;
     transform: rotateY(360deg);
 }
 
