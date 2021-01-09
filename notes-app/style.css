@@ -56,7 +56,11 @@ body {
     border: none;
     height: 400px;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
+}
+
+.main {
+    padding: 20px;
 }
 
 .hidden {
