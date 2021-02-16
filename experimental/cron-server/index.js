@@ -2,7 +2,7 @@ const axios = require('axios');
 
 var CronJob = require('cron').CronJob;
 var job = new CronJob(
-    '*/3 * * * * *',
+    '*/5 * * * * *',
     function () {
         axios
             .get('http://daten.g-g-g.de/lagerliste/Artikelverfuegbarkeit.csv')
@@ -14,8 +14,10 @@ var job = new CronJob(
                     dataArray.shift();
                 }
                 console.log(dataArray);
+
+                //CREATE TABLE (GGG_ + DATE) !NOT IF DATA MATCHES!
+                //*triplets* INSERT INTO.
             });
-        console.log('Lets do some fetching!');
     },
     null,
     true,
