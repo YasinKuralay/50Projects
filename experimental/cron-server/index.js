@@ -7,7 +7,13 @@ var job = new CronJob(
         axios
             .get('http://daten.g-g-g.de/lagerliste/Artikelverfuegbarkeit.csv')
             .then(({ data }) => {
-                console.log('the typeof data is: ', typeof data);
+                let dataArray = data.split(';');
+
+                //cuts the first three fields from the array, which are the field titles
+                for (let i = 0; i < 3; i++) {
+                    dataArray.shift();
+                }
+                console.log(dataArray);
             });
         console.log('Lets do some fetching!');
     },
