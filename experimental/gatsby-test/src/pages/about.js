@@ -1,5 +1,5 @@
-import React from "react"
-import Header from "../components/header"
+import React from "react";
+import Header from "../components/header";
 
 export default function About() {
   return (
@@ -8,5 +8,5 @@ export default function About() {
       <Header headerText="It's pretty cool" />
       <p>Such wow. Very React.</p>
     </div>
-  )
+  );
 }
